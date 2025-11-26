@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# Counter with Animations - React Native Assignment
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple counter app built with React Native and Expo that demonstrates state management and animations.
 
-## Get started
+## Features
 
-1. Install dependencies
+-  Increment and decrement counter
+-  Reset button to set counter to 0
+-  Smooth scale and fade animations on count change
+-  Clean and responsive UI
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
 
-   ```bash
-   npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone https://github.com/7arj/rn-assignment-arjunojha.git
+cd rn-assignment-your-name
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn more
+## Running the App
 
-To learn more about developing your project with Expo, look at the following resources:
+### Start the Expo development server:
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Run on different platforms:
 
-## Join the community
+- **iOS Simulator**: Press `i` in the terminal or scan QR code with Expo Go app
+- **Android Emulator**: Press `a` in the terminal or scan QR code with Expo Go app
+- **Physical Device**: Install Expo Go app and scan the QR code
 
-Join our community of developers creating universal apps.
+## Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+easy-app/
+├── src/
+│   ├── components/
+│   │   └── CounterDisplay.js    # Animated counter display component
+│   └── screens/
+│       └── Home.js               # Main screen with counter logic
+├── App.js                        # Root component
+├── package.json
+└── README.md
+```
+
+## Technologies Used
+
+- React Native
+- Expo SDK
+- React Hooks (useState, useEffect, useRef)
+- React Native Animated API
+
+## How It Works
+
+1. **State Management**: Uses `useState` hook to manage the counter value
+2. **Animation**: Combines scale and fade animations using `Animated.parallel` and `Animated.sequence`
+3. **Component Structure**: Separates display logic (CounterDisplay) from business logic (Home screen)
+
+## Expo Version
+
+- Expo SDK: ~52.0.0 (or latest)
+- React Native: Latest stable version included with Expo
+
+## Dependencies
+
+All dependencies are included in the default Expo template. No additional packages required.
+
+## Author
+
+[Your Name]
+
+## Assignment Submission
+
+Created as part of React Native Assignment C - Counter with Animations
